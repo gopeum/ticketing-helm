@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: 302174038725.dkr.ecr.ap-northeast-2.amazonaws.com/ticketing/event-svc
-  tag: 
+  tag: a1b2c3d
   pullPolicy: Always
 
 service:
