@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+
+{{- $env := .Values.env | default dict }}
+
+data:
+  DB_WRITER_HOST: {{ $env.DB_WRITER_HOST | default "" | quote }}
+  DB_READER_HOST: {{ $env.DB_READER_HOST | default "" | quote }}
+  DB_USER: {{ $env.DB_USER | default "" | quote }}
+
+  REDIS_HOST: {{ $env.REDIS_HOST | default "" | quote }}
+  SQS_QUEUE_URL: {{ $env.SQS_QUEUE_URL | default "" | quote }}
+
+  COGNITO_JSON: {{ $env.COGNITO_JSON | default "" | quote }}

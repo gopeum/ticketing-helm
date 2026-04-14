@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: 302174038725.dkr.ecr.ap-northeast-2.amazonaws.com/ticketing/worker-svc
+  tag: a1b2c3d
+  pullPolicy: Always
+
+secret:
+  DB_PASSWORD: "your-password"
+
+autoscaling:
+  enabled: false
+
+serviceAccount:
+  create: true
+  name: ticketing-sa
