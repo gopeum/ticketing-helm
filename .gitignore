@@ -35,7 +35,7 @@ credentials
 # Kubernetes / Helm Secret
 
 secret.yaml
-helm-charts/**/secret.yaml
+#helm-charts/**/secret.yaml
 argocd/*.secret.yaml
 
 # Logs & Temp
