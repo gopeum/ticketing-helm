@@ -20,3 +20,16 @@ serviceAccount:
   name: event-svc-sa
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::302174038725:role/ticketing-ssm-role
+
+env:
+  DB_WRITER_HOST: ""
+  DB_READER_HOST: ""
+  DB_USER: ""
+
+  REDIS_HOST: ""
+  SQS_QUEUE_URL: ""
+
+  COGNITO_JSON: ""
+
+secret:
+  DB_PASSWORD: ""
